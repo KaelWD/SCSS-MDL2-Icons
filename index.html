@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>MDL2 SCSS icon stylesheet</title>
 
+    <link rel="stylesheet" href="https://raw.githubusercontent.com/necolas/normalize.css/master/normalize.css">
     <link rel="stylesheet" href="dist/mdl2.min.css">
     <script type="text/javascript"
             src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
@@ -12,14 +13,16 @@
 <main>
     <h1>MDL2 Icon Stylesheet</h1>
     <a href="//github.com/KaelWD/SCSS-MDL2-Icons">GitHub</a>
+    <section id="usage">
+        <h2>Usage:</h2>
+    </section>
     <section id="icon-grid">
-
     </section>
 </main>
 <script type="text/javascript">
     $(document).ready(function () {
         $.getJSON('icons.json', function (data) {
-            var pattern = '<span data-mdl2="%1"></span>';
+            var pattern = '<div class="icon"><span data-mdl2="%1"></span></div>';
             $.each(data.IconList, function (index, iconName) {
                 var e = pattern.replace('%1', iconName);
                 $('#icon-grid').append(e);
