@@ -36,3 +36,9 @@ main {
     transition: background 0.1s, color 0.2s 0.05s;
     font-size: 1.1em;
     padding: calc(0.33rem - 0.05em) calc(0.5rem - 0.05em); }
+    .icon:hover .tooltip {
+      display: initial;
+      position: fixed;
+      white-space: nowrap; }
+  .icon .tooltip {
+    display: none; }
