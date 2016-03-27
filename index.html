@@ -23,9 +23,9 @@
 <script type="text/javascript">
     $(document).ready(function () {
         $.getJSON('icons.json', function (data) {
-            var pattern = '<span class="icon" data-mdl2="replaceme"><div class="tooltip">&lt;span data-mdl2="%1"&gt;&lt;/span&gt;</div></span>';
+            var pattern = '<span class="icon" data-mdl2="%1"><div class="tooltip">&lt;span data-mdl2="%1"&gt;&lt;/span&gt;</div></span>';
             $.each(data.IconList, function (index, iconName) {
-                var e = pattern.replace('replaceme', iconName);
+                var e = pattern.replace('%1', iconName);
                 $('#icon-grid').append(e);
             })
         });
