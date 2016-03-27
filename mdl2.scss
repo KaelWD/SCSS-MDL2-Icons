@@ -1,0 +1,13 @@
+@import "variables";
+
+
+
+@each $category, $contents in $icons {
+
+    /* #{$category} */
+    @each $name, $icon in $contents {
+        [data-mdl2="{$name}"]::before {
+            content : $icon;
+        }
+    }
+}
