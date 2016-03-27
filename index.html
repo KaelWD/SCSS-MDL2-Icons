@@ -18,11 +18,12 @@
 </main>
 <script type="text/javascript">
     $(document).ready(function () {
-        $.getJSON("icons.json", function (data) {
-            var pattern = "<span data-mdl2='%1'></span>";
+        $.getJSON('icons.json', function (data) {
+            var pattern = '<span data-mdl2="%1"></span>';
             var icons = $.parseJSON(data);
             $.each(icons.IconList, function (iconName) {
-                $("#icon-grid").append(pattern);
+                var e = pattern.replace('%1', iconName);
+                $('#icon-grid').append(e);
             })
         });
     });
