@@ -146,7 +146,7 @@ GitHub: https://github.com/KaelWD/SCSS-MDL2-Icons
   content: ""; }
 
 [data-mdl2="Unfavorite2Legacy"]::before {
-  content: ""; }
+  content: ""; }
 
 [data-mdl2="MobileContactLegacy"]::before {
   content: ""; }
@@ -789,206 +789,104 @@ GitHub: https://github.com/KaelWD/SCSS-MDL2-Icons
 [data-mdl2="BatteryUnknown"]::before {
   content: ""; }
 
-[data-mdl2="MobBatteryUnknown"]::before {
-  content: ""; }
-
 [data-mdl2="Battery0"]::before {
   content: ""; }
-
-[data-mdl2="MobBattery0"]::before {
-  content: ""; }
 
 [data-mdl2="Battery1"]::before {
   content: ""; }
 
-[data-mdl2="MobBattery1"]::before {
-  content: ""; }
-
 [data-mdl2="Battery2"]::before {
   content: ""; }
-
-[data-mdl2="MobBattery2"]::before {
-  content: ""; }
 
 [data-mdl2="Battery3"]::before {
   content: ""; }
 
-[data-mdl2="MobBattery3"]::before {
-  content: ""; }
-
 [data-mdl2="Battery4"]::before {
   content: ""; }
-
-[data-mdl2="MobBattery4"]::before {
-  content: ""; }
 
 [data-mdl2="Battery5"]::before {
   content: ""; }
 
-[data-mdl2="MobBattery5"]::before {
-  content: ""; }
-
 [data-mdl2="Battery6"]::before {
   content: ""; }
-
-[data-mdl2="MobBattery6"]::before {
-  content: ""; }
 
 [data-mdl2="Battery7"]::before {
   content: ""; }
 
-[data-mdl2="MobBattery7"]::before {
-  content: ""; }
-
 [data-mdl2="Battery8"]::before {
   content: ""; }
-
-[data-mdl2="MobBattery8"]::before {
-  content: ""; }
 
 [data-mdl2="Battery9"]::before {
   content: ""; }
 
-[data-mdl2="MobBattery9"]::before {
-  content: ""; }
-
 [data-mdl2="Battery10"]::before {
   content: ""; }
-
-[data-mdl2="MobBatter10"]::before {
-  content: ""; }
 
 [data-mdl2="BatteryCharging0"]::before {
   content: ""; }
 
-[data-mdl2="MobBatteryCharging0"]::before {
-  content: ""; }
-
 [data-mdl2="BatteryCharging1"]::before {
   content: ""; }
-
-[data-mdl2="MobBatteryCharging1"]::before {
-  content: ""; }
 
 [data-mdl2="BatteryCharging2"]::before {
   content: ""; }
 
-[data-mdl2="MobBatteryCharging2"]::before {
-  content: ""; }
-
 [data-mdl2="BatteryCharging3"]::before {
   content: ""; }
-
-[data-mdl2="MobBatteryCharging3"]::before {
-  content: ""; }
 
 [data-mdl2="BatteryCharging4"]::before {
   content: ""; }
 
-[data-mdl2="MobBatteryCharging4"]::before {
-  content: ""; }
-
 [data-mdl2="BatteryCharging5"]::before {
   content: ""; }
-
-[data-mdl2="MobBatteryCharging5"]::before {
-  content: ""; }
 
 [data-mdl2="BatteryCharging6"]::before {
   content: ""; }
 
-[data-mdl2="MobBatteryCharging6"]::before {
-  content: ""; }
-
 [data-mdl2="BatteryCharging7"]::before {
   content: ""; }
-
-[data-mdl2="MobBatteryCharging7"]::before {
-  content: ""; }
 
 [data-mdl2="BatteryCharging8"]::before {
   content: ""; }
 
-[data-mdl2="MobBatteryCharging8"]::before {
-  content: ""; }
-
 [data-mdl2="BatteryCharging9"]::before {
   content: ""; }
-
-[data-mdl2="MobBatteryCharging9"]::before {
-  content: ""; }
 
 [data-mdl2="BatteryCharging10"]::before {
   content: ""; }
 
-[data-mdl2="MobBatteryChargin10"]::before {
-  content: ""; }
-
 [data-mdl2="BatterySaver0"]::before {
   content: ""; }
-
-[data-mdl2="MobBatterySaver0"]::before {
-  content: ""; }
 
 [data-mdl2="BatterySaver1"]::before {
   content: ""; }
 
-[data-mdl2="MobBatterySaver1"]::before {
-  content: ""; }
-
 [data-mdl2="BatterySaver2"]::before {
   content: ""; }
-
-[data-mdl2="MobBatterySaver2"]::before {
-  content: ""; }
 
 [data-mdl2="BatterySaver3"]::before {
   content: ""; }
 
-[data-mdl2="MobBatterySaver3"]::before {
-  content: ""; }
-
 [data-mdl2="BatterySaver4"]::before {
   content: ""; }
-
-[data-mdl2="MobBatterySaver4"]::before {
-  content: ""; }
 
 [data-mdl2="BatterySaver5"]::before {
   content: ""; }
 
-[data-mdl2="MobBatterySaver5"]::before {
-  content: ""; }
-
 [data-mdl2="BatterySaver6"]::before {
   content: ""; }
-
-[data-mdl2="MobBatterySaver6"]::before {
-  content: ""; }
 
 [data-mdl2="BatterySaver7"]::before {
   content: ""; }
 
-[data-mdl2="MobBatterySaver7"]::before {
-  content: ""; }
-
 [data-mdl2="BatterySaver8"]::before {
   content: ""; }
-
-[data-mdl2="MobBatterySaver8"]::before {
-  content: ""; }
 
 [data-mdl2="BatterySaver9"]::before {
   content: ""; }
 
-[data-mdl2="MobBatterySaver9"]::before {
-  content: ""; }
-
 [data-mdl2="BatterySaver10"]::before {
   content: ""; }
-
-[data-mdl2="MobBatterySaver10"]::before {
-  content: ""; }
 
 [data-mdl2*="ZeroWidth"] {
   width: 0; }
