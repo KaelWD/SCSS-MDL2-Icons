@@ -1,21 +1,31 @@
+/*
+Author: Kael Watts-Deuchar
+Website: https://kaelwd.tk/
+
+Microsoft Guidelines: https://msdn.microsoft.com/en-us/windows/uwp/controls-and-patterns/segoe-ui-symbol-font
+GitHub: https://github.com/KaelWD/SCSS-MDL2-Icons
+*/
+
 @import "variables";
 
 @font-face {
     font-family : 'Segoe MDL2 Assets';
     src         : url('SegoeMDL2Assets.eot?#iefix') format('embedded-opentype'),
-                  url('SegoeMDL2Assets.woff') format('woff'),
-                  url('SegoeMDL2Assets.ttf') format('truetype'),
-                  url('SegoeMDL2Assets.svg#SegoeMDL2Assets') format('svg');
+    url('SegoeMDL2Assets.woff') format('woff'),
+    url('SegoeMDL2Assets.ttf') format('truetype'),
+    url('SegoeMDL2Assets.svg#SegoeMDL2Assets') format('svg');
     font-weight : normal;
     font-style  : normal;
 }
 
 [data-mdl2] {
-    font: normal normal normal 1em/1 'Segoe MDL2 Assets', sans-serif;
-    display                 : inline-block;
-    text-decoration         : none;
-    text-rendering          : auto;
-    user-select             : none;
+    font            : normal normal normal 1em/1 'Segoe MDL2 Assets', sans-serif;
+    display         : inline-block;
+    text-decoration : none;
+    text-rendering  : auto;
+    user-select     : none;
+    width           : 1em;
+    height          : 1em;
 }
 
 @each $category, $contents in $icons {
@@ -26,4 +36,8 @@
             content : $icon;
         }
     }
+}
+
+[data-mdl2*="ZeroWidth"] {
+    width : 0;
 }
