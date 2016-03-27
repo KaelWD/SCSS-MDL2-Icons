@@ -59,7 +59,7 @@ main {
 
     .tooltip {
         opacity        : 0;
-        position       : fixed;
+        position       : absolute;
         white-space    : nowrap;
         font-size      : initial;
         user-select    : none;

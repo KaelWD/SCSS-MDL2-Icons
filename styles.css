@@ -55,7 +55,7 @@ main {
               transition: opacity 0.2s; }
   .icon .tooltip {
     opacity: 0;
-    position: fixed;
+    position: absolute;
     white-space: nowrap;
     font-size: initial;
     -webkit-user-select: none;
