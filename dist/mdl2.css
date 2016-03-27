@@ -19,7 +19,9 @@ GitHub: https://github.com/KaelWD/SCSS-MDL2-Icons
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
-          user-select: none; }
+          user-select: none;
+  width: 1em;
+  height: 1em; }
 
 /* Hearts */
 [data-mdl2="HeartLegacy"]::before {
@@ -990,4 +992,6 @@ GitHub: https://github.com/KaelWD/SCSS-MDL2-Icons
 [data-mdl2="MobBatterySaver10"]::before {
   content: ""; }
 
+[data-mdl2*="ZeroWidth"] {
+  width: 0; }
 /*# sourceMappingURL=mdl2.css.map */
