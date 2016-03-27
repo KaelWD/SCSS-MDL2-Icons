@@ -13,15 +13,25 @@ main {
   color: #F2F2F2; }
 
 #icon-grid {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
   font-size: 2rem;
   box-sizing: border-box;
   padding: 1rem 15%;
   background: #171717; }
 
 .icon {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
   display: inline-flex;
   min-width: 1em;
   height: 1em;
@@ -29,24 +39,35 @@ main {
   margin: 0.2rem;
   background: #1F1F1F;
   color: #767676;
-  transition: font-size 0.1s, padding 0.1s, background 0.1s, color 0.2s 0.05s; }
+  -webkit-transition: font-size 0.1s, padding 0.1s, background 0.1s, color 0.2s 0.05s;
+          transition: font-size 0.1s, padding 0.1s, background 0.1s, color 0.2s 0.05s; }
   .icon:hover {
     background: #2B2B2B;
     color: #F2F2F2;
-    transition: background 0.1s, color 0.2s 0.05s;
+    -webkit-transition: background 0.1s, color 0.2s 0.05s;
+            transition: background 0.1s, color 0.2s 0.05s;
     font-size: 1.1em;
     padding: calc(0.33rem - 0.05em) calc(0.5rem - 0.05em); }
-    .icon:hover .tooltip {
+    .icon:hover + .tooltip {
       display: initial;
-      opacity: 1; }
-  .icon .tooltip {
-    display: none;
+      opacity: 1;
+      -webkit-transition: opacity 0.2s;
+              transition: opacity 0.2s; }
+  .icon + .tooltip {
     opacity: 0;
     position: fixed;
     white-space: nowrap;
     font-size: initial;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
     margin: 0;
     padding: 0.3em;
     background: #F2F2F2;
     color: #2B2B2B;
-    transform: translate(-50%, -2.5em); }
+    -webkit-transform: translate(-50%, -2.5em);
+        -ms-transform: translate(-50%, -2.5em);
+            transform: translate(-50%, -2.5em);
+    -webkit-transition: opacity 0.2s;
+            transition: opacity 0.2s; }

@@ -23,7 +23,7 @@
 <script type="text/javascript">
     $(document).ready(function () {
         $.getJSON('icons.json', function (data) {
-            var pattern = '<span class="icon" data-mdl2="%1"><pre class="tooltip">&lt;span data-mdl2="%1"&gt;&lt;/span&gt;</pre></span>';
+            var pattern = '<span class="icon" data-mdl2="%1"></span><pre class="tooltip">&lt;span data-mdl2="%1"&gt;&lt;/span&gt;</pre>';
             $.each(data.IconList, function (index, iconName) {
                 var e = pattern.replace(/%1/g, iconName);
                 $('#icon-grid').append(e);

@@ -50,22 +50,24 @@ main {
         font-size  : 1.1em;
         padding    : calc(0.33rem - 0.05em) calc(0.5rem - 0.05em);
 
-        .tooltip {
-            display : initial;
-            opacity : 1;
+        + .tooltip {
+            display    : initial;
+            opacity    : 1;
+            transition : opacity 0.2s;
         }
     }
 
-    .tooltip {
-        display     : none;
+    + .tooltip {
         opacity     : 0;
         position    : fixed;
         white-space : nowrap;
         font-size   : initial;
+        user-select : none;
         margin      : 0;
         padding     : 0.3em;
         background  : $icon-hover-font-colour;
         color       : $icon-hover-background-colour;
         transform   : translate(-50%, -2.5em);
+        transition  : opacity 0.2s;
     }
 }
