@@ -1,0 +1,350 @@
+/*
+Author: Kael Watts-Deuchar
+Website: https://kaelwd.tk/
+
+Microsoft Guidelines: https://msdn.microsoft.com/en-us/windows/uwp/controls-and-patterns/segoe-ui-symbol-font
+GitHub: https://github.com/KaelWD/SCSS-MDL2-Icons
+*/
+
+$Hearts: (
+  // (?:U\+)(.*)\n\n(.*)\n.*\n\n(.*)
+        HeartLegacy: 'E006', //Outlined heart
+        HeartFillLegacy: 'E0A5', //Solid heart
+        HeartBrokenLegacy: 'E007', //Broken heart
+        HeartFillZeroWidthLegacy: 'E00B', //Solid heart (zero width)
+        HeartBrokenZeroWidthLegacy: 'E00C', //Broken heart (zero width)
+);
+$RatingStars: (
+  // (?:U\+)(\S*)\s(?:\S*)\s(\S*)\s(.*)
+        RatingStarLegacy: 'E224', //Outlined star
+        RatingStarFillLegacy: 'E0B4', //Solid star
+        RatingStarFillZeroWidthLegacy: 'E00A', //Solid star (zero width)
+        RatingStarFillReducedPaddingHTMLLegacy: 'E082', //Solid star (reduced padding for use in HTML)
+        RatingStarFillSmallLegacy: 'E0B5', //Small star
+        HalfStarLeft: 'E7C6', //Half star, left side
+        HalfStarRight: 'E7C7', //Half star, right side
+);
+$Checkbox: (
+        CheckMarkLegacy: 'E001', //Check mark
+        CheckboxFillLegacy: 'E002', //Filled checkbox
+        CheckboxLegacy: 'E003', //Checkbox
+        CheckboxIndeterminateLegacy: 'E004', //Indeterminate state
+        CheckboxCompositeReversedLegacy: 'E005', //Reversed
+        CheckMarkZeroWidthLegacy: 'E008', //Check mark (zero width)
+        CheckboxFillZeroWidthLegacy: 'E009', //Fill (zero width)
+        CheckboxCompositeLegacy: 'E0A2', //Composite
+        Checkbox: 'E739', //Checkbox
+        CheckboxComposite: 'E73A', //Composite checkbox
+        CheckboxFill: 'E73B', //Filled checkbox
+        CheckboxIndeterminate: 'E73C', //Indeterminate state
+        CheckboxCompositeReversed: 'E73D', //Reversed composite
+        CheckMark: 'E73E', //Check mark
+);
+$Misc: (
+  // U\+(\S+)\s+\S+\s(\S+)\t*(.*)
+        CommentLegacy: 'E134', //Comment
+        FavoriteLegacy: 'E113', //
+        UnfavoriteLegacy: 'E195', //
+        FavoriteStar: 'E734', //Favorite outlined
+        FavoriteStarFill: 'E735', //
+        Unfavorite: 'E8D9', //
+        LikeLegacy: 'E19F', //
+        DislikeLegacy: 'E19E', //
+        LikeDislikeLegacy: 'E19D', //
+        VideoLegacy: 'E116', //
+        Video: 'E714', //
+        MailMessageLegacy: 'E20B', //Mail legacy
+        ReplyLegacy: 'E248', //Reply
+        Favorite2Legacy: 'E249', //Favorite filled
+        Unfavorite2Legacy: 'E24E', //Unfavorite
+        MobileContactLegacy: 'E25A', //Mobile contact
+        BlockedLegacy: 'E25B', //Blocked contact
+        TypingIndicatorLegacy: 'E25C', //Typing indicator
+        PresenceChickletVideoLegacy: 'E25D', //Video presence chicklet
+        PresenceChickletLegacy: 'E25E', //Presence chicklet
+);
+$ScrollArrows: (
+        ScrollChevronLeftLegacy: 'E00E',
+        ScrollChevronRightLegacy: 'E00F',
+        ScrollChevronUpLegacy: 'E010',
+        ScrollChevronDownLegacy: 'E011',
+        ScrollChevronLeftBoldLegacy: 'E016',
+        ScrollChevronRightBoldLegacy: 'E017',
+        ScrollChevronUpBoldLegacy: 'E018',
+        ScrollChevronDownBoldLegacy: 'E019',
+);
+$BackButtons: (
+        BackBttnArrow20Legacy: 'E0C4', //Back button arrow, 20pt
+        BackBttnArrow42Legacy: 'E0A6', //Back button arrow, 42pt
+        BackBttnMirroredArrow20Legacy: 'E0AD', //Mirrored back button arrow reversed, 20pt
+        BackBttnMirroredArrow42Legacy: 'E0AB', //Mirrored back button arrow reversed, 42pt
+        ChromeBack: 'E830', //Chrome back button
+        ChromeBackMirrored: 'EA47', //Chrome back mirrored button
+);
+$HTMLArrows: (
+        ArrowHTMLLegacy: 'E0D5', //Arrow for HTML use
+        ArrowHTMLMirroredLegacy: 'E0AE', //Mirrored version of U+E0D5
+);
+$AppBar: (
+        Accept: 'E8FB',
+        Accounts: 'E910',
+        Add: 'E710',
+        AddFriend: 'E8FA',
+        Admin: 'E7EF',
+        AlignCenter: 'E8E3',
+        AlignLeft: 'E8E4',
+        Alignright: 'E8E2',
+        AllApps: 'E71D',
+        Attach: 'E723',
+        AttachCamera: 'E8A2',
+        Audio: 'E8D6',
+        Back: 'E72B',
+        BackToWindow: 'E73F',
+        BlockContact: 'E8F8',
+        Bold: 'E8DD',
+        Bookmarks: 'E8A4',
+        BrowsePhotos: 'E7C5',
+        BulletedList: 'E8FD',
+        Calculator: 'E8EF',
+        Calendar: 'E787',
+        CalendarDay: 'E8BF',
+        CalendarReply: 'E8F5',
+        CalendarWeek: 'E8C0',
+        Camera: 'E722',
+        Cancel: 'E711',
+        Caption: 'E8BA',
+        CC: 'E7F0',
+        Cellphone: 'E8EA',
+        Characters: 'E8C1',
+        Clear: 'E894',
+        ClearSelection: 'E8E6',
+        ClosePane: 'E89F',
+        Cloud: 'E753',
+        Comment: 'E90A',
+        Contact: 'E77B',
+        Contact2: 'E8D4',
+        ContactInfo: 'E779',
+        ContactPresence: 'E8CF',
+        Copy: 'E8C8',
+        Crop: 'E7A8',
+        Cut: 'E8C6',
+        Delete: 'E74D',
+        Directions: 'E8F0',
+        DisableUpdates: 'E8D8',
+        DisconnectDrive: 'E8CD',
+        Dislike: 'E8E0',
+        DockBottom: 'E90E',
+        DockLeft: 'E90C',
+        DockRight: 'E90D',
+        Document: 'E8A5',
+        Download: 'E896',
+        Edit: 'E70F',
+        Emoji: 'E899',
+        Emoji2: 'E76E',
+        FavoriteList: 'E728',
+        FavoriteStar: 'E734',
+        FavoriteStarFill: 'E735',
+        Filter: 'E71C',
+        FindLegacy: 'E11A',
+        Flag: 'E7C1',
+        Folder: 'E8B7',
+        Font: 'E8D2',
+        Fontcolor: 'E8D3',
+        FontDecrease: 'E8E7',
+        FontIncrease: 'E8E8',
+        FontSize: 'E8E9',
+        Forward: 'E72A',
+        FourBars: 'E908',
+        FullScreen: 'E740',
+        Globe: 'E774',
+        Go: 'E8AD',
+        GoToStart: 'E8FC',
+        GoToToday: 'E8D1',
+        Hangup: 'E778',
+        Help: 'E897',
+        HideBCC: 'E8C5',
+        Highlight: 'E7E6',
+        Home: 'E80F',
+        Import: 'E8B5',
+        ImportAll: 'E8B6',
+        Important: 'E8C9',
+        Italic: 'E8DB',
+        KeyboardClassic: 'E765',
+        LeaveChat: 'E89B',
+        Library: 'E8F1',
+        Like: 'E8E1',
+        LikeDislike: 'E8DF',
+        Link: 'E71B',
+        List: 'EA37',
+        Location: 'E81D',
+        Mail: 'E715',
+        MailFill: 'E8A8',
+        MailForward: 'E89C',
+        MailReply: 'E8CA',
+        MailReplyAll: 'E8C2',
+        Manage: 'E912',
+        MapDrive: 'E8CE',
+        Mappin: 'E707',
+        Memo: 'E77C',
+        Message: 'E8BD',
+        Microphone: 'E720',
+        More: 'E712',
+        MoveToFolder: 'E8DE',
+        MusicInfo: 'E90B',
+        Mute: 'E74F',
+        NewFolder: 'E8F4',
+        NewWindow: 'E78B',
+        Next: 'E893',
+        OneBar: 'E905',
+        OpenFile: 'E8E5',
+        OpenLocal: 'E8DA',
+        OpenPane: 'E8A0',
+        OpenWith: 'E7AC',
+        Orientation: 'E8B4',
+        OtherUser: 'E7EE',
+        OutlineStarLegacy: 'E1CE',
+        Page: 'E7C3',
+        Paste: 'E77F',
+        Pause: 'E769',
+        People: 'E716',
+        Permissions: 'E8D7',
+        Phone: 'E717',
+        PhoneBook: 'E780',
+        Pin: 'E718',
+        Play: 'E768',
+        PostUpdate: 'E8F3',
+        Preview: 'E8FF',
+        PreviewLink: 'E8A1',
+        Previous: 'E892',
+        Priority: 'E8D0',
+        ProtectedDocument: 'E8A6',
+        Read: 'E8C3',
+        Redo: 'E7A6',
+        Refresh: 'E72C',
+        Remote: 'E8AF',
+        Remove: 'E738',
+        Rename: 'E8AC',
+        Repair: 'E90F',
+        RepeatAll: 'E8EE',
+        RepeatOne: 'E8ED',
+        ReportHacked: 'E730',
+        Reshare: 'E8EB',
+        Rotate: 'E7AD',
+        RotateCamera: 'E89E',
+        Save: 'E74E',
+        SaveLocal: 'E78C',
+        Scan: 'E8FE',
+        SelectAll: 'E8B3',
+        Send: 'E724',
+        SetLockScreen: 'E7B5',
+        SetTile: 'E97B',
+        Settings: 'E713',
+        Share: 'E72D',
+        Shop: 'E719',
+        ShowBCC: 'E8C4',
+        ShowResults: 'E8BC',
+        Shuffle: 'E8B1',
+        Slideshow: 'E786',
+        SolidStarLegacy: 'E1CF',
+        Sort: 'E8CB',
+        Stop: 'E71A',
+        Street: 'E913',
+        Switch: 'E8AB',
+        SwitchApps: 'E8F9',
+        Sync: 'E895',
+        SyncFolder: 'E8F7',
+        Tag: 'E8EC',
+        ThreeBars: 'E907',
+        TouchPointer: 'E7C9',
+        Trim: 'E78A',
+        TwoBars: 'E906',
+        TwoPage: 'E89A',
+        Underline: 'E8DC',
+        Undo: 'E7A7',
+        UnFavorite: 'E8D9',
+        UnPin: 'E77A',
+        UnSyncFolder: 'E8F6',
+        Up: 'E74A',
+        Upload: 'E898',
+        VideoChat: 'E8AA',
+        View: 'E890',
+        ViewAll: 'E8A9',
+        Volume: 'E767',
+        Webcam: 'E8B8',
+        World: 'E909',
+        ZeroBars: 'E904',
+        Zoom: 'E71E',
+        ZoomIn: 'E8A3',
+        ZoomOut: 'E71F',
+);
+$Battery: (
+  // \s(E.{3})\s\S+\s(\S+)
+        BatteryUnknown: 'E996',
+        MobBatteryUnknown: 'EC02',
+        Battery0: 'E850',
+        MobBattery0: 'EBA0',
+        Battery1: 'E851',
+        MobBattery1: 'EBA1',
+        Battery2: 'E852',
+        MobBattery2: 'EBA2',
+        Battery3: 'E853',
+        MobBattery3: 'EBA3',
+        Battery4: 'E854',
+        MobBattery4: 'EBA4',
+        Battery5: 'E855',
+        MobBattery5: 'EBA5',
+        Battery6: 'E856',
+        MobBattery6: 'EBA6',
+        Battery7: 'E857',
+        MobBattery7: 'EBA7',
+        Battery8: 'E858',
+        MobBattery8: 'EBA8',
+        Battery9: 'E859',
+        MobBattery9: 'EBA9',
+        Battery10: 'E83F',
+        MobBatter10: 'EBA0',
+        BatteryCharging0: 'E85A',
+        MobBatteryCharging0: 'EBAB',
+        BatteryCharging1: 'E85B',
+        MobBatteryCharging1: 'EBAC',
+        BatteryCharging2: 'E85C',
+        MobBatteryCharging2: 'EBAD',
+        BatteryCharging3: 'E85D',
+        MobBatteryCharging3: 'EBAE',
+        BatteryCharging4: 'E85E',
+        MobBatteryCharging4: 'EBAF',
+        BatteryCharging5: 'E85F',
+        MobBatteryCharging5: 'EBB0',
+        BatteryCharging6: 'E860',
+        MobBatteryCharging6: 'EBB1',
+        BatteryCharging7: 'E861',
+        MobBatteryCharging7: 'EBB2',
+        BatteryCharging8: 'E862',
+        MobBatteryCharging8: 'EBB3',
+        BatteryCharging9: 'E83E',
+        MobBatteryCharging9: 'EBB4',
+        BatteryCharging10: 'ea93',
+        MobBatteryChargin10: 'EBB5',
+        BatterySaver0: 'E863',
+        MobBatterySaver0: 'EBB6',
+        BatterySaver1: 'E864',
+        MobBatterySaver1: 'EBB7',
+        BatterySaver2: 'E865',
+        MobBatterySaver2: 'EBB8',
+        BatterySaver3: 'E866',
+        MobBatterySaver3: 'EBB9',
+        BatterySaver4: 'E867',
+        MobBatterySaver4: 'EBBA',
+        BatterySaver5: 'E868',
+        MobBatterySaver5: 'EBBB',
+        BatterySaver6: 'E869',
+        MobBatterySaver6: 'EBBC',
+        BatterySaver7: 'E86A',
+        MobBatterySaver7: 'EBBD',
+        BatterySaver8: 'E86B',
+        MobBatterySaver8: 'EBBE',
+        BatterySaver9: 'EA94',
+        MobBatterySaver9: 'EBBF',
+        BatterySaver10: 'EA95',
+        MobBatterySaver10: 'EBC0',
+);
