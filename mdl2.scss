@@ -24,8 +24,6 @@ GitHub: https://github.com/KaelWD/SCSS-MDL2-Icons
     text-decoration : none;
     text-rendering  : auto;
     user-select     : none;
-    width           : 1em;
-    height          : 1em;
 }
 
 @each $category, $contents in $icons {
