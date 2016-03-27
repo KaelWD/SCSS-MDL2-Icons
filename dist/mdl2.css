@@ -6,6 +6,21 @@ Website: https://kaelwd.tk/
 Microsoft Guidelines: https://msdn.microsoft.com/en-us/windows/uwp/controls-and-patterns/segoe-ui-symbol-font
 GitHub: https://github.com/KaelWD/SCSS-MDL2-Icons
 */
+@font-face {
+  font-family: 'Segoe MDL2 Assets';
+  src: url("SegoeMDL2Assets.eot?#iefix") format("embedded-opentype"), url("SegoeMDL2Assets.woff") format("woff"), url("SegoeMDL2Assets.ttf") format("truetype"), url("SegoeMDL2Assets.svg#SegoeMDL2Assets") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+[data-mdl2] {
+  font: normal normal normal 1em/1 'Segoe MDL2 Assets', sans-serif;
+  display: inline-block;
+  text-decoration: none;
+  text-rendering: auto;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
+
 /* Hearts */
 [data-mdl2="HeartLegacy"]::before {
   content: ""; }

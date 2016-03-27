@@ -1,6 +1,22 @@
 @import "variables";
 
+@font-face {
+    font-family : 'Segoe MDL2 Assets';
+    src         : url('SegoeMDL2Assets.eot?#iefix') format('embedded-opentype'),
+                  url('SegoeMDL2Assets.woff') format('woff'),
+                  url('SegoeMDL2Assets.ttf') format('truetype'),
+                  url('SegoeMDL2Assets.svg#SegoeMDL2Assets') format('svg');
+    font-weight : normal;
+    font-style  : normal;
+}
 
+[data-mdl2] {
+    font: normal normal normal 1em/1 'Segoe MDL2 Assets', sans-serif;
+    display                 : inline-block;
+    text-decoration         : none;
+    text-rendering          : auto;
+    user-select             : none;
+}
 
 @each $category, $contents in $icons {
 
