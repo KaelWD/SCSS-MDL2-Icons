@@ -6,7 +6,7 @@
 
     /* #{$category} */
     @each $name, $icon in $contents {
-        [data-mdl2="{$name}"]::before {
+        [data-mdl2="#{$name}"]::before {
             content : $icon;
         }
     }
