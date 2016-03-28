@@ -7,7 +7,7 @@ GitHub: https://github.com/KaelWD/SCSS-MDL2-Icons
 
 $main-background-colour : #000;
 $main-font-colour : #F2F2F2;
-$grid-background-colour : #171717;
+$secondary-background-colour : #171717;
 $icon-background-colour : #1F1F1F;
 $icon-font-colour : #767676;
 $icon-hover-background-colour : #2B2B2B;
@@ -17,6 +17,76 @@ body {
     margin     : 0;
     background : $main-background-colour;
     color      : $main-font-colour;
+    font-family: 'Segoe UI Thin', sans-serif;
+    display: flex;
+}
+
+main {
+    flex: 4 1 auto;
+}
+
+header {
+    background: $secondary-background-colour;
+    box-sizing: border-box;
+    padding: 0.75rem;
+    height: 4.2rem;
+
+    .title {
+        margin:0;
+    }
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    flex: 0 0 4.25rem;
+    box-sizing: border-box;
+    background: $secondary-background-colour;
+    order: -1;
+    transition: flex 0.5s;
+
+    .hamburger {
+        color: #F2F2F2;
+        width: 4.25rem;
+        height: 4.25rem;
+        padding: 0;
+        font-size: 2em;
+        border: none;
+        outline: none;
+        background: none;
+    }
+
+    .nav-item {
+        box-sizing: border-box;
+        color: #F2F2F2;
+        width: 4.25rem;
+        height: 4.25rem;
+        padding: 0.75rem;
+        font-size: 2em;
+        cursor: pointer;
+        overflow: hidden;
+        text-decoration: none;
+        transition: width 0.1s 0.4s;
+
+        &:hover {
+            background: #333;
+        }
+
+        svg {
+            fill: #F2F2F2;
+            height: 100%;
+        }
+    }
+
+    &:hover {
+        flex: 1 0 auto;
+        transition: flex 0.5s;
+
+        .nav-item {
+            width: 100%;
+        }
+    }
 }
 
 #icon-grid {
@@ -26,7 +96,7 @@ body {
     font-size       : 2rem;
     box-sizing      : border-box;
     padding         : 1rem 15%;
-    background      : $grid-background-colour;
+    background      : $secondary-background-colour;
 }
 
 .icon {

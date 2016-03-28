@@ -7,7 +7,91 @@ GitHub: https://github.com/KaelWD/SCSS-MDL2-Icons
 body {
   margin: 0;
   background: #000;
-  color: #F2F2F2; }
+  color: #F2F2F2;
+  font-family: 'Segoe UI Thin', sans-serif;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+main {
+  -webkit-box-flex: 4;
+  -webkit-flex: 4 1 auto;
+      -ms-flex: 4 1 auto;
+          flex: 4 1 auto; }
+
+header {
+  background: #171717;
+  box-sizing: border-box;
+  padding: 0.75rem;
+  height: 4.2rem; }
+  header .title {
+    margin: 0; }
+
+nav {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 4.25rem;
+      -ms-flex: 0 0 4.25rem;
+          flex: 0 0 4.25rem;
+  box-sizing: border-box;
+  background: #171717;
+  -webkit-box-ordinal-group: 0;
+  -webkit-order: -1;
+      -ms-flex-order: -1;
+          order: -1;
+  -webkit-transition: -webkit-box-flex 0.5s;
+  -webkit-transition: -webkit-flex 0.5s;
+          transition: -webkit-box-flex 0.5s;
+          transition: -ms-flex 0.5s;
+          transition: flex 0.5s; }
+  nav .hamburger {
+    color: #F2F2F2;
+    width: 4.25rem;
+    height: 4.25rem;
+    padding: 0;
+    font-size: 2em;
+    border: none;
+    outline: none;
+    background: none; }
+  nav .nav-item {
+    box-sizing: border-box;
+    color: #F2F2F2;
+    width: 4.25rem;
+    height: 4.25rem;
+    padding: 0.75rem;
+    font-size: 2em;
+    cursor: pointer;
+    overflow: hidden;
+    text-decoration: none;
+    -webkit-transition: width 0.1s 0.4s;
+            transition: width 0.1s 0.4s; }
+    nav .nav-item:hover {
+      background: #333; }
+    nav .nav-item svg {
+      fill: #F2F2F2;
+      height: 100%; }
+  nav:hover {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 0 auto;
+        -ms-flex: 1 0 auto;
+            flex: 1 0 auto;
+    -webkit-transition: -webkit-box-flex 0.5s;
+    -webkit-transition: -webkit-flex 0.5s;
+            transition: -webkit-box-flex 0.5s;
+            transition: -ms-flex 0.5s;
+            transition: flex 0.5s; }
+    nav:hover .nav-item {
+      width: 100%; }
 
 #icon-grid {
   display: -webkit-box;
