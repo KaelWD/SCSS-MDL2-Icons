@@ -21,7 +21,7 @@ body {
 
 #icon-grid {
     display         : flex;
-    justify-content : space-around;
+    justify-content : flex-start;
     flex-wrap       : wrap;
     font-size       : 2rem;
     box-sizing      : border-box;
