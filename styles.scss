@@ -14,11 +14,7 @@ $icon-hover-background-colour : #2B2B2B;
 $icon-hover-font-colour : #F2F2F2;
 
 body {
-    margin : 0;
-}
-
-main {
-    overflow   : auto;
+    margin     : 0;
     background : $main-background-colour;
     color      : $main-font-colour;
 }
@@ -66,9 +62,17 @@ main {
         pointer-events : none;
         margin         : 0;
         padding        : 0.3em;
-        background     : $icon-hover-font-colour;
-        color          : $icon-hover-background-colour;
+        background     : $icon-hover-background-colour;
+        color          : $icon-hover-font-colour;
         transform      : translate(-50%, -2.5em);
         transition     : opacity 0.2s;
+
+        .s0 { color : rgb(232, 191, 106); }
+        .s1 { color : rgb(186, 186, 186); }
+        .s2 { color : rgb(165, 194, 97); }
+        .s3 { color : rgb(169, 183, 198); }
+        .s4 { color : rgb(204, 120, 50); font-weight : bold; }
+        .s5 { color : rgb(106, 135, 89); }
+        .s6 { color : rgb(204, 120, 50); }
     }
 }

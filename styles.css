@@ -5,10 +5,7 @@ Website: https://kaelwd.tk/
 GitHub: https://github.com/KaelWD/SCSS-MDL2-Icons
 */
 body {
-  margin: 0; }
-
-main {
-  overflow: auto;
+  margin: 0;
   background: #000;
   color: #F2F2F2; }
 
@@ -65,10 +62,25 @@ main {
     pointer-events: none;
     margin: 0;
     padding: 0.3em;
-    background: #F2F2F2;
-    color: #2B2B2B;
+    background: #2B2B2B;
+    color: #F2F2F2;
     -webkit-transform: translate(-50%, -2.5em);
         -ms-transform: translate(-50%, -2.5em);
             transform: translate(-50%, -2.5em);
     -webkit-transition: opacity 0.2s;
             transition: opacity 0.2s; }
+    .icon .tooltip .s0 {
+      color: #e8bf6a; }
+    .icon .tooltip .s1 {
+      color: #bababa; }
+    .icon .tooltip .s2 {
+      color: #a5c261; }
+    .icon .tooltip .s3 {
+      color: #a9b7c6; }
+    .icon .tooltip .s4 {
+      color: #cc7832;
+      font-weight: bold; }
+    .icon .tooltip .s5 {
+      color: #6a8759; }
+    .icon .tooltip .s6 {
+      color: #cc7832; }
