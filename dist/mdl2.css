@@ -437,6 +437,9 @@ GitHub: https://github.com/KaelWD/SCSS-MDL2-Icons
 [data-mdl2="GoToToday"]::before {
   content: ""; }
 
+[data-mdl2="Hamburger"]::before {
+  content: ""; }
+
 [data-mdl2="Hangup"]::before {
   content: ""; }
 
