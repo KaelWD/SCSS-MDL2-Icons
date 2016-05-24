@@ -101,9 +101,13 @@ nav {
         }
     }
 
-    &:hover {
+    &.open {
         flex       : 1 0 13rem;
         transition : flex 0.5s;
+
+        .hamburger {
+            background : #333;
+        }
 
         .nav-item {
             width : 100%;

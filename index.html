@@ -10,8 +10,6 @@
     <link rel="stylesheet" href="https://raw.githubusercontent.com/necolas/normalize.css/master/normalize.css">
     <link rel="stylesheet" href="dist/mdl2.min.css">
     <link rel="stylesheet" href="styles.css">
-    <script type="text/javascript"
-            src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 </head>
 <body>
 <main>
@@ -25,7 +23,7 @@
     </section>
 </main>
 <nav>
-    <button class="hamburger" data-mdl2="Hamburger"></button>
+    <button class="hamburger nav-expander" data-mdl2="Hamburger"></button>
     <a class="nav-item github-link" href="//github.com/KaelWD/SCSS-MDL2-Icons">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32.6 31.8">
             <style type="text/css">.st0 { fill-rule : evenodd; clip-rule : evenodd; }</style>
@@ -35,16 +33,7 @@
         <label>GitHub</label>
     </a>
 </nav>
-<script type="text/javascript">
-    $(document).ready(function () {
-        $.getJSON('icons.json', function (data) {
-            var pattern = '<span class="icon" data-mdl2="%1"><pre class="tooltip"><span class="s0">&lt;span </span><span class="s1">data-mdl2=</span><span class="s2">&quot;%1&quot;</span><span class="s0">&gt;&lt;/span&gt;</span></pre></span>';
-            $.each(data.IconList, function (index, iconName) {
-                var e = pattern.replace(/%1/g, iconName);
-                $('#icon-grid').append(e);
-            })
-        });
-    });
-</script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script type="text/javascript" src="main.js"></script>
 </body>
 </html>
