@@ -15,8 +15,9 @@ $icon-hover-font-colour : #F2F2F2;
 
 body,
 html {
-    width  : 100%;
-    height : 100%;
+    width    : 100%;
+    height   : 100%;
+    overflow : hidden;
 }
 
 body {
@@ -77,6 +78,7 @@ nav {
         font-size       : 2em;
         cursor          : pointer;
         overflow        : hidden;
+        position        : relative;
         text-decoration : none;
         transition      : width 0.1s 0.4s;
         display         : flex;
@@ -123,6 +125,7 @@ nav {
     display    : inline-flex;
     min-width  : 1em;
     height     : 1em;
+    position   : relative;
     padding    : 0.33rem 0.5rem;
     margin     : 0.2rem;
     background : $icon-background-colour;
