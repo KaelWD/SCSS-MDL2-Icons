@@ -6,36 +6,36 @@ GitHub: https://github.com/KaelWD/SCSS-MDL2-Icons
 */
 body,
 html {
+  overflow: hidden;
   width: 100%;
-  height: 100%;
-  overflow: hidden; }
+  height: 100%; }
 
 body {
-  margin: 0;
-  background: #000;
-  color: #F2F2F2;
-  font-family: 'Segoe UI Thin', sans-serif;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  margin: 0;
+  background: #000;
+  color: #F2F2F2;
+  font-family: 'Segoe UI Thin', 'Segoe UI', sans-serif; }
 
 main {
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 100%;
   -webkit-box-flex: 4;
   -webkit-flex: 4 1 100%;
       -ms-flex: 4 1 100%;
-          flex: 4 1 100%;
-  height: 100%;
-  overflow-x: hidden;
-  overflow-y: auto; }
+          flex: 4 1 100%; }
 
 header {
-  background: #171717;
+  right: 0;
+  left: 4.25rem;
   box-sizing: border-box;
   padding: 0.75rem;
   height: 4.2rem;
-  left: 4.25rem;
-  right: 0; }
+  background: #171717; }
   header .title {
     margin: 0; }
 
@@ -49,44 +49,33 @@ nav {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 100vh;
-  -webkit-box-flex: 0;
-  -webkit-flex: 0 0 4.25rem;
-      -ms-flex: 0 0 4.25rem;
-          flex: 0 0 4.25rem;
   box-sizing: border-box;
+  height: 100vh;
   background: #171717;
-  -webkit-box-ordinal-group: 0;
-  -webkit-order: -1;
-      -ms-flex-order: -1;
-          order: -1;
   -webkit-transition: -webkit-box-flex 0.5s;
   -webkit-transition: -webkit-flex 0.5s;
           transition: -webkit-box-flex 0.5s;
           transition: -ms-flex 0.5s;
-          transition: flex 0.5s; }
+          transition: flex 0.5s;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 4.25rem;
+      -ms-flex: 0 0 4.25rem;
+          flex: 0 0 4.25rem;
+  -webkit-box-ordinal-group: 0;
+  -webkit-order: -1;
+      -ms-flex-order: -1;
+          order: -1; }
   nav .hamburger {
-    color: #F2F2F2;
+    padding: 0;
     width: 4.25rem;
     height: 4.25rem;
-    padding: 0;
-    font-size: 2em;
-    border: none;
     outline: none;
-    background: none; }
-  nav .nav-item {
-    box-sizing: border-box;
+    border: none;
+    background: none;
     color: #F2F2F2;
-    width: 100%;
-    height: 4.25rem;
-    padding: 0.75rem;
-    font-size: 2em;
-    cursor: pointer;
-    overflow: hidden;
+    font-size: 2em; }
+  nav .nav-item {
     position: relative;
-    text-decoration: none;
-    -webkit-transition: width 0.1s 0.4s;
-            transition: width 0.1s 0.4s;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -96,30 +85,41 @@ nav {
     -webkit-flex-direction: row;
         -ms-flex-direction: row;
             flex-direction: row;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 0.75rem;
+    width: 100%;
+    height: 4.25rem;
+    color: #F2F2F2;
+    text-decoration: none;
+    font-size: 2em;
+    cursor: pointer;
+    -webkit-transition: width 0.1s 0.4s;
+            transition: width 0.1s 0.4s;
     -webkit-flex-wrap: nowrap;
         -ms-flex-wrap: nowrap;
             flex-wrap: nowrap; }
     nav .nav-item:hover {
       background: #333; }
     nav .nav-item svg {
-      fill: #F2F2F2;
+      width: 2.75rem;
       height: 2.75rem;
-      width: 2.75rem; }
+      fill: #F2F2F2; }
     nav .nav-item label {
       position: absolute;
       left: 5rem; }
     nav .nav-item * {
       cursor: pointer; }
   nav.open {
-    -webkit-box-flex: 1;
-    -webkit-flex: 1 0 13rem;
-        -ms-flex: 1 0 13rem;
-            flex: 1 0 13rem;
     -webkit-transition: -webkit-box-flex 0.5s;
     -webkit-transition: -webkit-flex 0.5s;
             transition: -webkit-box-flex 0.5s;
             transition: -ms-flex 0.5s;
-            transition: flex 0.5s; }
+            transition: flex 0.5s;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 0 13rem;
+        -ms-flex: 1 0 13rem;
+            flex: 1 0 13rem; }
     nav.open .hamburger {
       background: #333; }
     nav.open .nav-item {
@@ -130,63 +130,63 @@ nav {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  box-sizing: border-box;
+  padding: 1rem 15%;
+  background: #171717;
+  font-size: 2rem;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
       -ms-flex-pack: start;
           justify-content: flex-start;
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-  font-size: 2rem;
-  box-sizing: border-box;
-  padding: 1rem 15%;
-  background: #171717; }
+          flex-wrap: wrap; }
 
 .icon {
+  position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  margin: 0.2rem;
+  padding: 0.33rem 0.5rem;
   min-width: 1em;
   height: 1em;
-  position: relative;
-  padding: 0.33rem 0.5rem;
-  margin: 0.2rem;
   background: #1F1F1F;
   color: #767676;
   -webkit-transition: font-size 0.1s, padding 0.1s, background 0.1s, color 0.2s 0.05s;
           transition: font-size 0.1s, padding 0.1s, background 0.1s, color 0.2s 0.05s; }
   .icon:hover {
+    padding: calc(0.33rem - 0.05em) calc(0.5rem - 0.05em);
     background: #2B2B2B;
     color: #F2F2F2;
-    -webkit-transition: background 0.1s, color 0.2s 0.05s;
-            transition: background 0.1s, color 0.2s 0.05s;
     font-size: 1.1em;
-    padding: calc(0.33rem - 0.05em) calc(0.5rem - 0.05em); }
+    -webkit-transition: background 0.1s, color 0.2s 0.05s;
+            transition: background 0.1s, color 0.2s 0.05s; }
     .icon:hover .tooltip {
       display: initial;
       opacity: 1;
       -webkit-transition: opacity 0.2s;
               transition: opacity 0.2s; }
   .icon .tooltip {
-    opacity: 0;
     position: absolute;
-    white-space: nowrap;
-    font-size: initial;
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
-    pointer-events: none;
     margin: 0;
     padding: 0.3em;
     background: #2B2B2B;
     color: #F2F2F2;
+    white-space: nowrap;
+    font-size: initial;
+    opacity: 0;
+    -webkit-transition: opacity 0.2s;
+            transition: opacity 0.2s;
     -webkit-transform: translate(-50%, -2.5em);
         -ms-transform: translate(-50%, -2.5em);
             transform: translate(-50%, -2.5em);
-    -webkit-transition: opacity 0.2s;
-            transition: opacity 0.2s; }
+    pointer-events: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none; }
     .icon .tooltip .s0 {
       color: #e8bf6a; }
     .icon .tooltip .s1 {
