@@ -1,0 +1,25 @@
+{
+  "name": "scss-mdl2-icons",
+  "version": "0.2.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://KaelWD@github.com/KaelWD/SCSS-MDL2-Icons.git"
+  },
+  "author": "KaelWD",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KaelWD/SCSS-MDL2-Icons/issues"
+  },
+  "homepage": "https://github.com/KaelWD/SCSS-MDL2-Icons#readme",
+  "devDependencies": {
+    "gulp": "gulpjs/gulp#4.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0"
+  }
+}

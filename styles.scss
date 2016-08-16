@@ -130,43 +130,54 @@ nav {
 }
 
 .icon {
-    position   : relative;
-    display    : inline-flex;
-    margin     : 0.2rem;
-    padding    : 0.33rem 0.5rem;
-    min-width  : 1em;
-    height     : 1em;
-    background : $icon-background-colour;
-    color      : $icon-font-colour;
-    transition : font-size 0.1s, padding 0.1s, background 0.1s, color 0.2s 0.05s;
+    position : relative;
+    display  : inline-flex;
+    margin   : 0.2rem;
+    width    : auto;
+
+    &::before {
+        padding    : 0.33rem 0.5rem;
+        background : $icon-background-colour;
+        color      : $icon-font-colour;
+        transition : transform 0.1s, background 0.1s, color 0.2s 0.05s;
+    }
 
     &:hover {
-        padding    : calc(0.33rem - 0.05em) calc(0.5rem - 0.05em);
-        background : $icon-hover-background-colour;
-        color      : $icon-hover-font-colour;
-        font-size  : 1.1em;
-        transition : background 0.1s, color 0.2s 0.05s;
+        z-index : 1;
+
+        &::before {
+            background : $icon-hover-background-colour;
+            color      : $icon-hover-font-colour;
+            transform  : scale(1.5);
+        }
 
         .tooltip {
-            display    : initial;
-            opacity    : 1;
-            transition : opacity 0.2s;
+            //$scale : 1 / 1.5;
+            display   : initial;
+            opacity   : 1;
+            transform : translate(-50%, -3.5em);
         }
     }
 
     .tooltip {
         position       : absolute;
+        left           : 50%;
         margin         : 0;
-        padding        : 0.3em;
+        padding        : 0.3rem;
         background     : $icon-hover-background-colour;
         color          : $icon-hover-font-colour;
         white-space    : nowrap;
         font-size      : initial;
         opacity        : 0;
-        transition     : opacity 0.2s;
-        transform      : translate(-50%, -2.5em);
+        transition     : opacity 0.2s, transform 0.2s;
+        transform      : translate(-50%, -3.5rem) scale(0.2);
         pointer-events : none;
         user-select    : none;
+
+        &.fullsize {
+            transition : none;
+            transform  : translate(-50%, -3.5rem) scale(1);
+        }
 
         .s0 { color : rgb(232, 191, 106); }
         .s1 { color : rgb(186, 186, 186); }
